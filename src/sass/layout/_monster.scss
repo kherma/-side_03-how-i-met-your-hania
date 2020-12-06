@@ -1,0 +1,44 @@
+#monster {
+  padding: 5rem;
+  background-color: $latte-light;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+  border-top: 10px solid $main-green;
+
+  .section-heading {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .section-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .section-img {
+    height: 20rem;
+    margin: 1rem;
+    box-shadow: 1rem 1rem $latte-dark;
+  }
+
+  .section-gallery {
+    justify-content: center;
+  }
+
+  .title-special {
+    color: $main-blue;
+    background-color: $color-light;
+    text-shadow: 0.3rem 0.3rem $latte-dark;
+    padding: 2rem;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    @include mobile {
+      padding: 3rem;
+      font-size: 4rem;
+    }
+  }
+
+  .section-img-4 {
+    height: 40rem;
+  }
+}

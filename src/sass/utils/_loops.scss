@@ -1,0 +1,8 @@
+@for $i from 1 through 4 {
+  .section-img-#{$i} {
+    background: url("../../images/cute-#{$i}.jpg")
+      no-repeat
+      center
+      center/cover;
+  }
+}
