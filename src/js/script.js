@@ -1,7 +1,10 @@
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
 const heroBtn = document.querySelector(".reveal");
+const anim = document.querySelector(".anim");
 let toogler = 0;
+let animCount = 1;
+
 if (window.screen.width <= 767) {
   navbar.classList.add("close");
 }
@@ -27,3 +30,13 @@ heroBtn.addEventListener("click", function (event) {
     toogler = 0;
   }
 });
+console.log(anim.style.background);
+
+setInterval(() => {
+  if (animCount === 7) {
+    animCount = 1;
+  }
+  anim.style.background = `url("../../images/anim_one/anim-${animCount}.jpg") no-repeat center
+  center/cover`;
+  animCount++;
+}, 2000);
