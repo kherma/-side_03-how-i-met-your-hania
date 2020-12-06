@@ -2,6 +2,7 @@ const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
 const heroBtn = document.querySelector(".reveal");
 const anim = document.querySelector(".anim");
+const menuButtons = document.querySelectorAll(".menu-special");
 let toogler = 0;
 let animCount = 1;
 
@@ -30,7 +31,6 @@ heroBtn.addEventListener("click", function (event) {
     toogler = 0;
   }
 });
-console.log(anim.style.background);
 
 setInterval(() => {
   if (animCount === 7) {
@@ -40,3 +40,12 @@ setInterval(() => {
   center/cover`;
   animCount++;
 }, 2000);
+
+menuButtons.forEach((button) => {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    document
+      .querySelector(`#${event.target.dataset.goto}`)
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
