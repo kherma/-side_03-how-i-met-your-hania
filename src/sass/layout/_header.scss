@@ -37,6 +37,7 @@
     opacity: 0.4;
     z-index: 1;
   }
+
   .close {
     opacity: 0;
     visibility: hidden;
@@ -44,6 +45,7 @@
       pointer-events: none;
     }
   }
+
   .navbar {
     @include mobile {
       @include full-screen-navbar;
@@ -113,10 +115,31 @@
     z-index: 3;
     justify-content: center;
     align-items: center;
+    // transform: translateY(40%);
     flex-wrap: wrap;
     height: 100%;
     width: 90%;
     text-align: center;
+    flex-direction: column;
+
+    .reveal {
+      border: 2px solid $latte-dark;
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      outline: none;
+      background-color: $main-blue;
+      color: $latte-light;
+      border-bottom-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
 
     .main-title {
       text-transform: uppercase;
