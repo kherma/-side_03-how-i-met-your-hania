@@ -15,14 +15,14 @@ heroBtn.addEventListener("click", function (event) {
     document.querySelector(".main-title").style.visibility = "hidden";
     document.querySelector(
       ".header"
-    ).style.background = `url("../../images/monster-3.JPG") no-repeat center center/cover`;
+    ).style.background = `url("../../images/monster-3.jpeg") no-repeat center center/cover`;
     event.target.textContent = "click to hide the true";
     toogler = 1;
   } else {
     document.querySelector(".main-title").style.visibility = "visible";
     document.querySelector(
       ".header"
-    ).style.background = `url("../../images/hero-2.JPG") no-repeat center center/cover`;
+    ).style.background = `url("../../images/hero-2.jpeg") no-repeat center center/cover`;
     event.target.textContent = "click to see the true";
     toogler = 0;
   }

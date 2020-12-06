@@ -6,3 +6,12 @@
       center/cover;
   }
 }
+
+@for $i from 1 through 3 {
+  .dance-img-#{$i} {
+    background: url("../../images/dance-#{$i}.jpeg")
+      no-repeat
+      center
+      center/cover;
+  }
+}
