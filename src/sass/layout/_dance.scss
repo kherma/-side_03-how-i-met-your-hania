@@ -1,8 +1,13 @@
-#dance {
+#dance,
+#wisdom {
   background-color: $main-blue;
   padding: 5rem;
   border-top: 10px solid $latte-dark;
   border-bottom: 10px solid $latte-dark;
+
+  .title-special {
+    font-size: 3rem;
+  }
 
   .section-img {
     height: 40rem;

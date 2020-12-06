@@ -1,0 +1,14 @@
+.quote-img {
+  background: url("../../images/quote.jpeg") no-repeat left center/cover;
+  height: 70rem;
+  @include mobile {
+    height: 30rem;
+  }
+  @include mobile-landscape {
+    height: 20rem;
+  }
+
+  @include mobile-small {
+    height: 20rem;
+  }
+}
