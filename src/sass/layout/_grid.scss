@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  @include grid("sm");
+}
+
+@media (min-width: 768px) {
+  @include grid("md");
+}
+
+@media (min-width: 992px) {
+  @include grid("lg");
+}
+
+@media (min-width: 1200px) {
+  @include grid("xl");
+}
